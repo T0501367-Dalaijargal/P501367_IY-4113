@@ -50,7 +50,7 @@ Key design ideas you could reuse (e.g., layout, navigation, input/output, progra
 
 Screenshot (showing the interface/output):
 
-[![](C:\Users\User\AppData\Roaming\marktext\images\2026-02-01-20-34-52-image.png)](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Research1.png)
+(https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Research1.png)
 
 ---
 
@@ -68,7 +68,7 @@ Key design ideas you could reuse (e.g., layout, navigation, input/output, progra
 
 Screenshot (showing the interface/output):
 
-[![](C:\Users\User\AppData\Roaming\marktext\images\2026-02-01-20-34-11-image.png)](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Research2.png)
+(https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Research2.png)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -76,7 +76,7 @@ Screenshot (showing the interface/output):
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-[![](C:\Users\User\AppData\Roaming\marktext\images\2026-02-01-20-54-38-Gantt%20(1).jpg)](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Gantt%20(1).jpg)
+(https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Gantt%20(1).jpg)
 
 ### Diary Entries
 
@@ -94,4 +94,5 @@ In general, there were no major difficulties except for my mental well-being.
 Today, I worked on the research. Instead of doing just one research, I opted to do two, which could be even more useful for this program’s future. I searched through GitHub for similar projects and found two results that meet my expectations. Then I quickly updated my Gantt chart based on the previous feedback, adding the fourth week and final submission deadlines.
 
 Doing the research and finding similar programs was quite an obstacle for me, as I am unfamiliar with GitHub.  Especially on showing the interface part, which is where I struggled the most.
+
 
