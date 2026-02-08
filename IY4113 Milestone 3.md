@@ -66,7 +66,7 @@ boolean isInRange(int value, int min, int max) {
 
 Screenshot of research:  
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-02-08-20-39-47-image.png)
+![Screenshot 1]https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/researchCode1.png
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ public class Cart {
 
 Screenshot of research:
 
-![](C:\Users\User\Downloads\Screenshot%202026-02-08%20204706.png)
+![Screenshot 2]https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/researchCode2.png
 
 ---
 
@@ -140,7 +140,7 @@ public class DailyCappedFareStrategy implements FareStrategy {
 
 Screenshot of research:
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-02-08-22-13-28-Screenshot%202026-02-08%20205922.png)
+![Screenshot 3]https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/researchCode3.png
 
 ---
 
@@ -295,3 +295,4 @@ One note to myself is time management. For the first two milestones, I managed m
 Today I did research that would be useful for my future coding. I was having a but of trouble finding research materials for my coding. After finding some resources, I tried using the code but it was incomplete or there was an error occuring. Which was super frustrating. However, I did more searching and in the end I'm happy with what I found.
 
 ------------------------------------------------------------------------------------------------------------------------------
+
