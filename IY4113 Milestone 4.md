@@ -440,7 +440,7 @@ public class Main {
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-02-15-21-14-48-Gantt%20(2).jpg)
+[Gantt Chart](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Gantt%20(2).jpg)
 
 ---
 
@@ -471,3 +471,4 @@ My "setupSession" captures the passenger name and sets up the passenger type. Ge
 Firstly, this method checks if there is any existing journey. Then the user can filter the journey with these four categories passenger type, time band, zone and date. Also it will validate the input. For example if the user chooses zone and enters outside a range between 1-5 it will send a feedback to the user.
 
 After finishing up the filterJourneys method, I went through the previous codes saand tried to make it cleaner. Also updated my Gantt chart. 
+
