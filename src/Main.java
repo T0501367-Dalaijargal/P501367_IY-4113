@@ -357,7 +357,10 @@ public class Main {
     }
 
     private static void resetDay() {
-
+        journeys.clear();
+        initRunningTotals();
+        nextId = 1;
+        System.out.println("The day has been reset. All journeys and totals are cleared.");
     }
 
     static class Journey {
