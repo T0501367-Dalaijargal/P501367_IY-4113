@@ -72,17 +72,17 @@ One of the most important features of this updated version of CityRide Lite is t
 
 ---
 
-![](C:\Users\User\Downloads\Part%202.jpg)
+![Flowchart 1](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202.jpg)
 
-![](C:\Users\User\Downloads\Part%202%20(1).jpg)
+![Flowchart 2](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(1).jpg)
 
-![](C:\Users\User\Downloads\Part%202%20(2).jpg)
+![Flowchart 3](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(2).jpg)
 
-![](C:\Users\User\Downloads\Part%202%20(3).jpg)
+![Flowchart 4](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(3).jpg)
 
-![](C:\Users\User\Downloads\Part%202%20(4).jpg)
+![Flowchart 5](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(4).jpg)
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-03-22-23-58-34-image.png)
+![Class Diagram]([https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(5).jpg](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Screenshot%202026-03-22%20235823.png))
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -113,9 +113,9 @@ The type of passenger selected by the user will be set once for each user, and w
 
 Screenshot (showing the interface/output):
 
-![](C:\Users\User\Downloads\Oyster1.JPG)
+![Screenshot 1](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Oyster1.JPG)
 
-![](C:\Users\User\Downloads\Oyster2.JPG)
+![Screenshot 2](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Oyster2.JPG)
 
 ---
 
@@ -145,7 +145,7 @@ Citymapper also saves the user’s default home and work locations within the ap
 
 Screenshot (showing the interface/output):
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-03-23-00-19-40-image.png)
+![Screenshot 3](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Screenshot%202026-03-23%20001927.png)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -153,7 +153,7 @@ Screenshot (showing the interface/output):
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-![](C:\Users\User\Downloads\Part%202%20(5).jpg)
+![GANTT Chart](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(5).jpg)
 ------------------------------------------------------------------------------------------------------------------------------
 
 ### Diary Entries
