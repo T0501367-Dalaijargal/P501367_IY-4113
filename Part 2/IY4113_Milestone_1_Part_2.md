@@ -82,7 +82,7 @@ One of the most important features of this updated version of CityRide Lite is t
 
 ![Flowchart 5](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(4).jpg)
 
-![Class Diagram]([https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(5).jpg](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Screenshot%202026-03-22%20235823.png))
+![Class Diagram](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Screenshot%202026-03-22%20235823.png)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
