@@ -45,7 +45,7 @@ The official Oracle documentation for BigDecimal was essential for implementing 
 
 **Screenshot of research:**
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-04-06-15-07-06-image.png)
+![BigDecimals](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/BigDecimal.png)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -66,7 +66,7 @@ The Oracle I/O tutorial guided me through the implementation of all of the file 
 
 **Screenshot of research:**
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-04-06-15-09-10-image.png)
+![Reading Files](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/ReadingTextFiles.png)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -87,7 +87,7 @@ This Baeldung tutorial showed techniques for reading and writing CSV files witho
 
 **Screenshot of research:**
 
-![](C:\Users\User\AppData\Roaming\marktext\images\2026-04-06-15-11-02-image.png)
+![CSV Files](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/CSVFile.png)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -898,7 +898,7 @@ public class Main {
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-![](C:\Users\User\Downloads\Part%202%20(6).jpg)
+![Gantt Chart](https://github.com/T0501367-Dalaijargal/P501367_IY-4113/blob/main/Part%202/Part%202%20(6).jpg)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
