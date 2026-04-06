@@ -5,21 +5,13 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-/**
- * CityRide Lite - Part 2
- * Menu-driven transport fare calculator with Rider and Admin roles.
- * Merges: Main, JourneyManager, ReportManager, AdminMenu, InputHelper.
- *
- * All 22 functional requirements are covered — see requirement tags in comments.
- */
+
 public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static RiderProfile activeProfile = new RiderProfile();
 
-    // =====================================================================
-    //  JOURNEY MANAGEMENT STATE (from JourneyManager)
-    // =====================================================================
+
 
     private static final List<Journey> journeys = new ArrayList<>();
     private static final Map<CityRideDataset.PassengerType, BigDecimal> runningTotals = new HashMap<>();
@@ -51,7 +43,7 @@ public class Main {
         }
     }
 
-    /** Add a journey with fare calculation (Req 9, 10). */
+
     private static Journey doAddJourney(String date, String time, int fromZone, int toZone,
                                         CityRideDataset.PassengerType passengerType) {
         CityRideDataset.TimeBand timeBand = CityRideDataset.determineTimeBand(time);
@@ -69,7 +61,7 @@ public class Main {
         return journey;
     }
 
-    /** Recalculate all charged fares and running totals from scratch (Req 6a). */
+
     private static void recalculateTotals() {
         initRunningTotals();
         List<Journey> temp = new ArrayList<>(journeys);
@@ -99,7 +91,6 @@ public class Main {
         return null;
     }
 
-    /** Import journeys from CSV (Req 8). Recalculates fares with current config. */
     private static int importFromCsv(String filename) {
         File file = new File(filename);
         if (!file.exists()) {
@@ -127,7 +118,7 @@ public class Main {
         return count;
     }
 
-    /** Export journeys to CSV (Req 8). */
+
     private static void exportJourneysToCsv(String filename) {
         try {
             File dir = new File(filename).getParentFile();
@@ -146,9 +137,7 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    //  INPUT HELPERS (from InputHelper) — Req 18, 19, 22
-    // =====================================================================
+
 
     private static int readZone(String prompt) {
         while (true) {
@@ -242,9 +231,7 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    //  MAIN ENTRY POINT
-    // =====================================================================
+
 
     public static void main(String[] args) {
         initRunningTotals();
@@ -252,10 +239,10 @@ public class Main {
         System.out.println("   Welcome to CityRide Lite (Part 2)");
         System.out.println("=============================================\n");
 
-        // Req 2 & 3: Load config (defaults if file missing)
+
         RiderProfile.loadConfig();
 
-        // Check for saved state from previous session
+
         if (RiderProfile.hasSavedState()) {
             System.out.print("A saved session was found. Resume it? (y/n): ");
             if (scanner.nextLine().trim().equalsIgnoreCase("y")) {
@@ -286,9 +273,7 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    //  MAIN MENU (Req 21)
-    // =====================================================================
+
 
     private static void displayMainMenu() {
         System.out.println("\n--- Session: " + activeProfile.getName() +
@@ -310,9 +295,7 @@ public class Main {
         System.out.print("Choose an option (1-6): ");
     }
 
-    // =====================================================================
-    //  PROFILE MENU (Req 4, 5)
-    // =====================================================================
+
 
     private static void profileMenu() {
         boolean back = false;
@@ -356,9 +339,7 @@ public class Main {
         if (loaded != null) activeProfile = loaded;
     }
 
-    // =====================================================================
-    //  JOURNEY MENU (Req 6, 7, 8)
-    // =====================================================================
+
 
     private static void journeyMenu() {
         boolean back = false;
@@ -412,7 +393,7 @@ public class Main {
 
         Journey j = doAddJourney(date, time, fromZone, toZone, pType);
 
-        // Req 11: show per-journey costs, running total, cap status
+
         System.out.println("\nJourney added successfully!");
         System.out.println(j);
         BigDecimal running = getRunningTotal(pType);
@@ -588,9 +569,7 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    //  CALCULATE & VIEW (Req 11)
-    // =====================================================================
+
 
     private static void calculateAndView() {
         boolean back = false;
@@ -657,9 +636,7 @@ public class Main {
         System.out.println("  Off-peak journeys: " + offPeakCount);
     }
 
-    // =====================================================================
-    //  REPORTS MENU (Req 12, 13)
-    // =====================================================================
+
 
     private static void reportsMenu() {
         boolean back = false;
@@ -681,7 +658,6 @@ public class Main {
         }
     }
 
-    /** End-of-day summary displayed to console (Req 12a-f). */
     private static void displayDailySummary() {
         if (journeys.isEmpty()) { System.out.println("No journeys recorded."); return; }
 
@@ -716,7 +692,7 @@ public class Main {
         System.out.printf("Most expensive journey:   ID %d (£%.2f)%n",
                 mostExpensive.getId(), mostExpensive.getChargedFare());                             // Req 12d
 
-        // Req 12e: cap status and savings
+
         System.out.println("\n--- Cap Status ---");
         for (CityRideDataset.PassengerType type : CityRideDataset.PassengerType.values()) {
             BigDecimal running = getRunningTotal(type);
@@ -730,7 +706,6 @@ public class Main {
             System.out.printf("Savings from daily cap:   £%.2f%n", capSavings);
         }
 
-        // Req 12f: category counts
         System.out.println("\n--- Category Counts ---");
         System.out.println("Peak journeys:     " + peakCount);
         System.out.println("Off-peak journeys: " + offPeakCount);
@@ -745,7 +720,7 @@ public class Main {
         System.out.println("========================================\n");
     }
 
-    /** Export CSV report with line items (Req 13a). */
+
     private static void exportCsvReport() {
         if (journeys.isEmpty()) { System.out.println("No journeys to export."); return; }
         String dateStr = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -774,7 +749,6 @@ public class Main {
         }
     }
 
-    /** Export human-readable text summary (Req 13b). */
     private static void exportTextSummary() {
         if (journeys.isEmpty()) { System.out.println("No journeys to export."); return; }
         String dateStr = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -834,9 +808,6 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    //  ADMIN MENU (Req 1, 15, 16, 17, 18, 19)
-    // =====================================================================
 
     private static final String ADMIN_PASSWORD = "admin123";
 
@@ -863,11 +834,11 @@ public class Main {
             String choice = scanner.nextLine().trim();
 
             switch (choice) {
-                case "1": viewConfig(); break;              // Req 16
-                case "2": manageBaseFares(); break;         // Req 17a
-                case "3": manageDiscounts(); break;         // Req 17b
-                case "4": manageDailyCaps(); break;         // Req 17c
-                case "5": managePeakWindows(); break;       // Req 17d
+                case "1": viewConfig(); break;
+                case "2": manageBaseFares(); break;
+                case "3": manageDiscounts(); break;
+                case "4": manageDailyCaps(); break;
+                case "5": managePeakWindows(); break;
                 case "6": RiderProfile.saveConfig(); break;
                 case "7": exit = true; break;
                 default: System.out.println("Invalid choice. Please try again.");
@@ -1063,10 +1034,6 @@ public class Main {
         System.out.println("Validation error: Enter 'Peak' or 'Off-Peak'.");
         return null;
     }
-
-    // =====================================================================
-    //  EXIT (Req 20)
-    // =====================================================================
 
     private static boolean handleExit() {
         if (!journeys.isEmpty()) {
