@@ -33,7 +33,6 @@ public final class CityRideDataset {
         }
     }
 
-
     private static Map<PassengerType, BigDecimal> discountRate = new HashMap<>();
     private static Map<PassengerType, BigDecimal> dailyCap = new HashMap<>();
     private static Map<String, BigDecimal> baseFare = new HashMap<>();
@@ -68,7 +67,7 @@ public final class CityRideDataset {
         peakEveningEndTime = "19:00";
     }
 
-    // --- Accessors ---
+    //Accessors
     public static Map<PassengerType, BigDecimal> getDiscountRates() { return discountRate; }
     public static Map<PassengerType, BigDecimal> getDailyCaps() { return dailyCap; }
     public static Map<String, BigDecimal> getBaseFares() { return baseFare; }
@@ -81,7 +80,7 @@ public final class CityRideDataset {
     public static String getPeakEveningStartTime() { return peakEveningStartTime; }
     public static String getPeakEveningEndTime() { return peakEveningEndTime; }
 
-    // --- Mutators (for admin / config loading) ---
+
     public static void setDiscountRate(PassengerType type, BigDecimal rate) { discountRate.put(type, rate); }
     public static void setDailyCap(PassengerType type, BigDecimal cap) { dailyCap.put(type, cap); }
     public static void setBaseFare(int from, int to, TimeBand band, BigDecimal fare) {
@@ -93,9 +92,6 @@ public final class CityRideDataset {
         peakEveningStartTime = eStart;
         peakEveningEndTime = eEnd;
     }
-    public static void setDiscountRates(Map<PassengerType, BigDecimal> rates) { discountRate = new HashMap<>(rates); }
-    public static void setDailyCaps(Map<PassengerType, BigDecimal> caps) { dailyCap = new HashMap<>(caps); }
-    public static void setBaseFares(Map<String, BigDecimal> fares) { baseFare = new HashMap<>(fares); }
 
     public static BigDecimal getBaseFare(int fromZone, int toZone, TimeBand timeBand) {
         BigDecimal fare = baseFare.get(key(fromZone, toZone, timeBand));
@@ -113,7 +109,6 @@ public final class CityRideDataset {
     public static BigDecimal money(String amount) {
         return new BigDecimal(amount).setScale(2, RoundingMode.HALF_UP);
     }
-
 
     public static TimeBand determineTimeBand(String time) {
         if (time == null || time.isEmpty()) return TimeBand.OFF_PEAK;
